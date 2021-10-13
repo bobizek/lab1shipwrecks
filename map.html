@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/e678d6f032.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+	<title>Кораблекрушения</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+  <a href="main-en.html" class="logo">Кораблекрушения</a>
+  <table class="menu">
+      <td><a target="_blank" href="index-rus.html">Информация</a></td>
+      <td><a href="index-rus.html#second-rus">Крупнейшие</a></td>
+      <td><a href="index-rus.html#more-rus">Подробнее</a></td>
+      <td><a href="map.html">Карта</a></td>
+      <td>
+        <select class="select">
+          <option value="index-rus.html" data-url="index-rus.html">Русский</option>
+          <option value="index-en.html" data-url="index-en.html">English</option>
+        </select>
+      </td>
+  </table>
+</header>
+<div id="map">
+  <div class="map" style="padding-top: 5%;">
+    <h1>Карта кораблекрушений</h1>
+    <p>Нажмите на любую окружность, чтобы узнать детали</p>
+    <img src="imgs/map.png" width="1000" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="circle" coords="40, 93, 5" alt="3" href="area1.html">
+      <area shape="circle" coords="677, 253, 6" alt="2" href="area2.html">
+      <area shape="circle" coords="189, 177, 10" alt="3" href="area3.html">
+      <area shape="circle" coords="544, 307, 8" alt="4" href="area4.html">
+      <area shape="circle" coords="429, 141, 10" alt="5" href="area5.html">
+      <area shape="circle" coords="412, 282, 12" alt="6" href="area6.html">
+      <area shape="circle" coords="594, 201, 13" alt="7" href="area7.html">
+      <area shape="circle" coords="413, 68, 17" alt="8" href="area8.html">
+      <area shape="circle" coords="793, 95, 25" alt="9" href="area9.html">
+      <area shape="circle" coords="469, 150, 32" alt="10" href="area10.html">
+      <area shape="circle" coords="821, 208, 35" alt="11" href="area11.html">
+    </map>
+  </div>
+</div>
+</body>
+</html>
