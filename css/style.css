@@ -298,6 +298,54 @@ content {
 	border: 1px solid #fff;
 }
 
+#frame {
+	font-size: 16px;
+}
 
+#frame .check input {
+	margin-right: 10px;
+}
+
+iframe {
+	padding: 30px;
+	background-color: #fff;
+	display: block;
+	width: 300px;
+	height: 510px;
+	margin: 100px auto;
+}
+
+.sub {
+	padding-left: 30px;
+}
+
+.sub-list {
+	padding-left: 10px;
+}
+
+#frame ol {
+   /* убираем стандартную нумерацию */
+   list-style: none;
+   padding-left: 20px;
+   /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+   counter-reset: li;
+}
+#frame li:before {
+   /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+   counter-increment: li;
+   /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+   content: counters(li, ".") ". ";
+}
+
+#frame button {
+	width: 50px;
+	display: block;
+	margin: 20px auto;
+	color: #fff;
+	padding: 5px 0px;
+	background-color: #567876;
+	border: 1px solid #567876;
+	border-radius: 5px;
+}
 
 

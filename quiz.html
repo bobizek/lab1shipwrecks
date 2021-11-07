@@ -8,24 +8,26 @@
 	<title>Shipwrecks</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body style="background-color: #567876;">
 <header>
-  <a href="main-en.html" class="logo">Shipwrecks</a>
+  <a href="main-rus.html" class="logo">Кораблекрушения</a>
   <table class="menu">
-      <td><a target="_blank" href="index-en.html">Info</a></td>
-      <td><a href="index-en.html#second-en">Largest</a></td>
-      <td><a href="index-en.html#more-en">More</a></td>
-      <td><a href="map.html">Map</a></td>
+      <td><a target="_blank" href="index-rus.html">Информация</a></td>
+      <td><a href="#second-rus">Крупнейшие</a></td>
+      <td><a href="#more-rus">Подробнее</a></td>
+      <td><a href="map.html">Карта</a></td>
       <td>
         <select class="select">
-          <option data-url="main-en.html">English</option>
-          <option value="main-rus.html" data-url="main-rus.html">Русский</option>
+          <option value="index-rus.html" data-url="index-rus.html">Русский</option>
+          <option value="index-en.html" data-url="index-en.html">English</option>
         </select>
       </td>
   </table>
 </header>
-<div id="main-en">
+
+<div id="frame"></div>
+<div>
+  <iframe src="frame-rus.html"></iframe>
 </div>
-<h1 class="hello">Welcome :)</h1>
 </body>
 </html>
